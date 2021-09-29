@@ -1,0 +1,15 @@
+body{
+   
+    background-image:url(https://www.agilesolutions.co.uk/app/uploads/2019/02/Data-Data-Management.jpg) ;
+background-repeat:no-repeat ;
+width: 100%;
+background-position: auto;
+}
+h1{
+    color: rgb(41, 219, 74);
+}
+.form-control{
+    background: rgba(93, 167, 109, 0.938);
+    border-radius: 10px;
+}
+
