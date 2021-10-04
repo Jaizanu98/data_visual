@@ -1,46 +1,41 @@
 import { useEffect, useState } from "react";
+import{Bar} from"react-chartjs-2"
 import app_config from "../../config";
-import { Bar } from 'react-chartjs-2';
-
 
 const DataDetail=(props)=>{
   const data = props.userData;
 
-  const graph = {
+  const productList  = []
   
-      labels: [data.brand],
-      datasets: [
+   const graph={
+       labels:[],
+       datasets:[
+           {
+               data:[]
+           }
+       ]
+       
+   }
+  
+   for(let product of productList){
+  data.labels.push(product.brand);
+  data.datasets[0].data.push(product.price)
+   }
+   const options = {
+    scales: {
+      yAxes: [
         {
-          label: 'pice of shoes',
-          data: [data.price],
-          backgroundColor: [
-            'black'
-          ],
-          borderColor: [
-           'white'
-          ],
-          borderWidth: 1,
-          
+          ticks: {
+            beginAtZero: true,
+          },
         },
       ],
-    };
-    
-    const options = {
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              
-              beginAtZero: true,
-            },
-          },
-        ],
-      },
-    };
-    
+    },
+  };
+  
     return(
       
-      <Bar  data={graph} options={options} />
+      <Bar data={graph} options={options} />
     
     )
 }
@@ -87,7 +82,7 @@ const ShowData=()=>{
 }
 else{
   return(
-      <h1>Still Loading!!!</h1>
+      <h1>Still Loading</h1>
   )
 }
 }

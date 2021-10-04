@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 const Home=()=>{
     return(
         <div style={{marginTop:'5em'}}>
-        <Card style={{width:'70rem',margin:'1em',background:'#0b400f',boxShadow:'1px 6px 6px 1px ,solid white'}}  sx={{ minWidth: 100}}>
+        <Card style={{width:'70rem',margin:'1em',background:'#5769c2',boxShadow:'1px 6px 6px 1px ,solid white'}}  sx={{ minWidth: 100}}>
         <CardContent>
             <p style={{color:'white'}} className="h4">Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.<br>
             </br>In the world of Big Data, data visualization tools and technologies are essential to analyze massive amounts of information and make data-driven decisions.</p>
@@ -14,7 +14,7 @@ const Home=()=>{
 <div className="container">
 <Grid container rowSpacing={1} columnSpacing={{  }}>
   <Grid item xs={4}>
-  <Card style={{width:'18em',background:'#0b400f',color:'white'}}>
+  <Card style={{width:'18em',background:'#98a6ed',color:'white'}}>
         <CardContent>
         <h6>Graph</h6>
 
@@ -27,7 +27,7 @@ const Home=()=>{
     </Card>
   </Grid>
   <Grid item xs={4}>
-  <Card style={{width:'18em'}}>
+  <Card style={{width:'18em',background:'#98a6ed',color:'white'}}>
         <CardContent>
         <h6>Chart</h6>
 
@@ -40,7 +40,7 @@ const Home=()=>{
     </Card>
   </Grid>
   <Grid item xs={4}>
-  <Card style={{width:'18em'}}>
+  <Card style={{width:'18em',background:'#98a6ed',color:'white'}}>
         <CardContent>
         <h6>Map</h6>
 

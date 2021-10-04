@@ -31,7 +31,7 @@ const Login = () => {
             text:'loged in successfully'
           })
           .then((data)=>{
-            window.location.replace('/admin/dashboard')
+            window.location.replace('/admin/userdashboard')
 
           })
           return
