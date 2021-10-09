@@ -1,10 +1,10 @@
 
 import { AppBar, Button, IconButton, InputBase, Switch, Toolbar } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
-import SearchIcon from "@material-ui/icons/Search";
-import MenuIcon from "@material-ui/icons/Menu";
+import SearchIcon from "@mui/icons/Search";
+import MenuIcon from "@mui/icons/Menu";
 import { Link } from "react-router-dom";
-const Header=()=>{
+const Header = () => {
     const Search = styled('div')(({ theme }) => ({
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
@@ -47,16 +47,16 @@ const Header=()=>{
         },
     }));
 
-    return(
-        <AppBar style={{background:'lightgreen'}}>
+    return (
+        <AppBar style={{ background: 'lightgreen' }}>
             <Toolbar>
                 <IconButton className="text-white">
                     {/* <MenuIcon /> */}
                 </IconButton>
-                <Button style={{background:'black',margin:"3px"}} className="active" component={Link} variant="outline" to="/home">Home</Button>
+                <Button style={{ background: 'black', margin: "3px" }} className="active" component={Link} variant="outline" to="/home">Home</Button>
 
-                <Button style={{background:'black',margin:"3px"}}  component={Link} variant="outline" to="/signin">Sign up</Button>
-                <Button style={{background:'black',margin:"3px"}} component={Link} variant="outline" to="/login">Log in</Button>
+                <Button style={{ background: 'black', margin: "3px" }} component={Link} variant="outline" to="/signin">Sign up</Button>
+                <Button style={{ background: 'black', margin: "3px" }} component={Link} variant="outline" to="/login">Log in</Button>
 
                 <Search>
                     <SearchIconWrapper>
